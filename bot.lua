@@ -29,7 +29,7 @@ _set start text you can use {USERNAME} and {FIRSTNAME} for info of user started 
 /id
 _send group id_
 /init
-_reload bot!_
+*reload bot!*
 ]] 
 
 -------
@@ -38,7 +38,7 @@ _reload bot!_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {208094932,0}-- put your id here
+  local admins = {208094932}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
